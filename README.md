@@ -1,4 +1,14 @@
 LeetCode
 ========
 
-[LeetCode](https://leetcode.com/problemset/algorithms/)
+## Algorithms
+
+### Easy
+
+- [Reverse String](./algorithms/easy/reverse-string)
+
+### Medium
+
+### Hard
+
+## Database
