@@ -1,6 +1,8 @@
 Reverse String
 ========
 
+关键词：`分治法`、`字符串`
+
 ## 题目描述
 
 > Write a function that takes a string as input and returns the string reversed.
@@ -95,6 +97,6 @@ class Solution {
 }
 ```
 
-## 思路优化及代码改进
-
 ## 总结
+
+思路一和思路二比较容易想到，思路三则需要稍微思考一下，里面用到了算法里比较常见的`分治法`。`分治法`在我们日常解决问题时也是比较常见的策略，当遇到比较复杂的问题，我们可以把问题分成更小的部分，常常小的问题更加容易被解决。
