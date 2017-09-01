@@ -1,6 +1,8 @@
 Merge Two Binary Trees
 ========
 
+关键词：`二叉树`、`递归`
+
 ## 题目描述
 
 > Given two binary trees and imagine that when you put one of them to cover the other, some nodes of the two trees are overlapped while the others are not.
@@ -17,6 +19,7 @@ Input:
         3   2                     1   3                        
        /                           \   \                      
       5                             4   7                  
+
 Output: 
 Merged tree:
 	     3
@@ -66,3 +69,5 @@ class Solution {
 ```
 
 ## 总结
+
+这道题目前只想到一种递归的方式。
