@@ -10,6 +10,14 @@ class Solution {
         return Integer.parseInt(result, 2);
     }
 
-    public int findComplement2(int num) {}
-}
+    public int findComplement2(int num) {
+        String binaryString = Integer.toBinaryString(num);
+        String allOneBit = "";
 
+        for (char c : binaryString.toCharArray()) {
+            allOneBit += '1';
+        }
+
+        return Integer.parseInt(binaryString, 2) ^ Integer.parseInt(allOneBit, 2);
+    }
+}

@@ -58,4 +58,19 @@ class Solution {
 0101 // result
 ```
 
+```java
+class Solution {
+    public int findComplement(int num) {
+        String binaryString = Integer.toBinaryString(num);
+        String allOneBit = "";
+
+        for (char c : binaryString.toCharArray()) {
+            allOneBit += '1';
+        }
+
+        return Integer.parseInt(binaryString, 2) ^ Integer.parseInt(allOneBit, 2);
+    }
+}
+```
+
 ## 总结
