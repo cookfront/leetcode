@@ -42,15 +42,20 @@ class Solution {
             result += (c == '0') ? '1' : '0';
         }
 
-        System.out.println(Integer.parseInt(result, 2));
+        return Integer.parseInt(result, 2);
     }
 }
 ```
 
-但是这种方法在`leetcode`里会报语法错误。
-
 **思路二：**
 
+首先找到数字的二进制表示，然后生成对应位作全是`1`的数字进行异或操作。以`10`为例：
 
+```
+10
+1010 // binary
+1111
+0101 // result
+```
 
 ## 总结

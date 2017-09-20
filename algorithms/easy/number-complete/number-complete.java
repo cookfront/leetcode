@@ -1,5 +1,5 @@
 class Solution {
-    public int findComplement(int num) {
+    public int findComplement1(int num) {
         String binaryString = Integer.toBinaryString(num);
         String result = "";
 
@@ -7,7 +7,9 @@ class Solution {
             result += (c == '0') ? '1' : '0';
         }
 
-        System.out.println(Integer.parseInt(result, 2));
+        return Integer.parseInt(result, 2);
     }
+
+    public int findComplement2(int num) {}
 }
 
