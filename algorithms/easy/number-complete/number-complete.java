@@ -20,4 +20,8 @@ class Solution {
 
         return Integer.parseInt(binaryString, 2) ^ Integer.parseInt(allOneBit, 2);
     }
+
+    public int findComplement3(int num) {
+        return num ^ ((Integer.highestOneBit(num) << 1) - 1);
+    }
 }

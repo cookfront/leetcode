@@ -49,7 +49,7 @@ class Solution {
 
 **思路二：**
 
-首先找到数字的二进制表示，然后生成对应位作全是`1`的数字进行异或操作。以`10`为例：
+首先找到数字的二进制表示，然后生成对应位全是`1`的数字进行异或操作。以`10`为例：
 
 ```
 10
@@ -73,4 +73,28 @@ class Solution {
 }
 ```
 
+**思路三：**
+
+看了下discuss，思路二中提到的`对应位全是1的数字`即为当前数字的一个掩码，其实不需要生成一个全是1的数字，只需要生成到最左侧为1为止。优化下以上代码：
+
+```java
+class Solution {
+    public int findComplement(int num) {
+        return num ^ ((Integer.highestOneBit(num) << 1) - 1);
+    }
+}
+```
+
+其实在discuss中是利用对当前数字取非再和掩码做`&`操作，最终结果是一样的。如下：
+
+```java
+class Solution {
+    public int findComplement(int num) {
+        return ~num & ((Integer.highestOneBit(num) << 1) - 1);
+    }
+}
+```
+
 ## 总结
+
+这道题中其实就是考察到了掩码的计算，利用了Java的`Integer.highestOneBit`函数巧妙的计算出掩码，而不是思路二中比较暴力的算出来。
