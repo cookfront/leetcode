@@ -97,4 +97,4 @@ class Solution {
 
 ## 总结
 
-这道题中其实就是考察到了掩码的计算，利用了Java的`Integer.highestOneBit`函数巧妙的计算出掩码，而不是思路二中比较暴力的算出来。
+这道题中其实就是考察到了掩码的计算以及掩码的作用，利用了Java的`Integer.highestOneBit`函数巧妙的计算出掩码，而不是思路二中比较暴力的算出来。
